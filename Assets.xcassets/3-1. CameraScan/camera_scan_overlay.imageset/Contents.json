@@ -1,0 +1,26 @@
+{
+  "images" : [
+    {
+      "filename" : "camerascan_ic_shutter_40t-250x250.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "camerascan_ic_shutter_40t-500x500.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "camerascan_ic_shutter_40t-750x750.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "original"
+  }
+}

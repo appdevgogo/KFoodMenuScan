@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Select Word View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SelectWord" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="SelectWordViewController" customModule="KFoodMenuScan" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0y-cr-vLb">
+                                <rect key="frame" x="0.0" y="44" width="414" height="758"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jG2-9V-hXV">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="758"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="jG2-9V-hXV" secondAttribute="trailing" id="Bu4-5R-qjT"/>
+                                    <constraint firstAttribute="bottom" secondItem="jG2-9V-hXV" secondAttribute="bottom" id="DeD-Rk-pEQ"/>
+                                    <constraint firstItem="jG2-9V-hXV" firstAttribute="leading" secondItem="h0y-cr-vLb" secondAttribute="leading" id="gVI-EO-jOq"/>
+                                    <constraint firstItem="jG2-9V-hXV" firstAttribute="top" secondItem="h0y-cr-vLb" secondAttribute="top" id="jHo-Fh-VFN"/>
+                                </constraints>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K4C-p9-JfJ">
+                                <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AdU-eG-xLa">
+                                        <rect key="frame" x="354" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="LUc-V9-8l5"/>
+                                            <constraint firstAttribute="height" constant="60" id="ZxD-6a-kSB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="magnifyingglass.circle" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25" scale="large" weight="regular"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Please select a food name&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="npt-0p-yLX">
+                                        <rect key="frame" x="10" y="20" width="215" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="apx-YE-T9S"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="AdU-eG-xLa" secondAttribute="trailing" id="1kg-uV-yXL"/>
+                                    <constraint firstAttribute="height" constant="60" id="BSQ-bi-cZs"/>
+                                    <constraint firstAttribute="bottom" secondItem="AdU-eG-xLa" secondAttribute="bottom" id="IyB-Di-Gd7"/>
+                                    <constraint firstItem="AdU-eG-xLa" firstAttribute="top" secondItem="K4C-p9-JfJ" secondAttribute="top" id="JFZ-fs-5Gz"/>
+                                    <constraint firstItem="npt-0p-yLX" firstAttribute="centerY" secondItem="K4C-p9-JfJ" secondAttribute="centerY" id="Vkt-84-LGt"/>
+                                    <constraint firstItem="AdU-eG-xLa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="npt-0p-yLX" secondAttribute="trailing" constant="20" id="bft-gh-KNc"/>
+                                    <constraint firstItem="npt-0p-yLX" firstAttribute="leading" secondItem="K4C-p9-JfJ" secondAttribute="leading" constant="10" id="feX-wC-2bn"/>
+                                    <constraint firstItem="AdU-eG-xLa" firstAttribute="centerY" secondItem="K4C-p9-JfJ" secondAttribute="centerY" id="ux2-MW-y6c"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h0y-cr-vLb" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="4y8-ys-ZHr"/>
+                            <constraint firstItem="jG2-9V-hXV" firstAttribute="width" secondItem="h0y-cr-vLb" secondAttribute="width" id="Izk-on-mSY"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="K4C-p9-JfJ" secondAttribute="bottom" id="KRc-BW-77Q"/>
+                            <constraint firstItem="K4C-p9-JfJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Lg8-oZ-sBs"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="h0y-cr-vLb" secondAttribute="bottom" constant="60" id="Mje-0V-PPa"/>
+                            <constraint firstItem="K4C-p9-JfJ" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="glx-uu-aPg"/>
+                            <constraint firstItem="h0y-cr-vLb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="gmj-rf-7o6"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="h0y-cr-vLb" secondAttribute="trailing" id="kO2-Fx-ni1"/>
+                            <constraint firstItem="jG2-9V-hXV" firstAttribute="height" secondItem="h0y-cr-vLb" secondAttribute="height" id="y2r-j8-PPu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currentImgView" destination="jG2-9V-hXV" id="TES-6W-nUc"/>
+                        <outlet property="scrollView" destination="h0y-cr-vLb" id="S40-sc-JSH"/>
+                        <outlet property="searchBtn" destination="AdU-eG-xLa" id="T0A-PH-GkY"/>
+                        <outlet property="selectedWord" destination="npt-0p-yLX" id="31A-fv-NLq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="magnifyingglass.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
